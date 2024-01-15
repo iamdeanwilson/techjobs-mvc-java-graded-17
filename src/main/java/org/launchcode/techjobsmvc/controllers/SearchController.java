@@ -28,7 +28,7 @@ public class SearchController {
     }
 
     @PostMapping("results")
-    public String displaySearchResults(@RequestParam String searchType, @RequestParam String searchTerm, Model model){
+    public String displaySearchResults(Model model, @RequestParam String searchType, @RequestParam String searchTerm){
         ArrayList<Job> jobs;
         jobs = JobData.findByColumnAndValue(searchType, searchTerm);
         model.addAttribute("title", "Jobs with " + columnChoices.get(searchType) + ": " + searchTerm);
