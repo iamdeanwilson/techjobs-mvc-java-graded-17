@@ -21,7 +21,9 @@
                 </tr>
                 <tr>
                     <td>Employer</td>
-                    <td th:text="${job.employer}"></td>
+                    <td>
+                        <a th:text="${job.employer}" th:href="@{jobs&quest;column=employer&value=(${job.employer})}"> ></a>
+                    </td>
                 </tr>
                 <tr>
                     <td>Location</td>

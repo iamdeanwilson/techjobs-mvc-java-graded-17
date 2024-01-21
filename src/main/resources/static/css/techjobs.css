@@ -31,10 +31,12 @@ table.job-listing {
 
 table.job-listing td:first-child {
     font-weight: bold;
+    text-decoration: underline;
 }
 
 table.job-listing td:last-child {
     width: 80%;
+    font-style: italic;
 }
 
 label {
